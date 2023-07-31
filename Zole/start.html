@@ -3,38 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome!</title>
+  <link href="styles.css" rel="stylesheet">
+  <title>Kapājam Zolīti!!!</title>
 </head>
 <body>
-  <h1>Choose the Number of Players:</h1>
+  <h1>Cik spēlētāju būs?</h1>
   <form>
+    <fieldset>
     <label>
-      <input type="radio" name="player-count" value="3" onclick="redirectToNameInput('3')">
-      3 Players
+      <input class="p-count" type="radio" name="player-count" value="3" onclick="redirectToNameInput('3')">
+      3 Spēlētāji
     </label>
     <br>
     <label>
-      <input type="radio" name="player-count" value="4" onclick="redirectToNameInput('4')">
-      4 Players
+      <input class="p-count" type="radio" name="player-count" value="4" onclick="redirectToNameInput('4')">
+      4 Spēlētāji
     </label>
     <br>
+  </fieldset>
   </form>
-  <h1>Choose saved game:</h1>
-  <form>
-    <label>
-      <input type="radio" name="saved-game-1">
-      Game 1
-    </label>
-  </form>
+  
 
-  <script>
-    function redirectToNameInput(playerCount) {
-      if (playerCount === '3') {
-        window.location.href = "player_names_3.html";
-      } else if (playerCount === '4') {
-        window.location.href = "player_names_4.html";
-      }
-    }
-  </script>
+  <script src="myscripts.js"></script>
+  
 </body>
 </html>

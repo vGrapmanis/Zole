@@ -3,27 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Name Input - 3 Players</title>
+  <link href="styles.css" rel="stylesheet">
+  <title>Kapājam Zolīti!!!</title>
 </head>
 <body>
-  <h1>Enter Names for 3 Players:</h1>
-  <form action="game-start.html" method="get">
+  <h1>Drukā spēlētāju vārdus:</h1>
+  <form action="game-3.html" method="get">
+    <fieldset>
     <label>
-      Player 1:
-      <input type="text" name="player1" required>
+      Spēlētājs 1:
+      <input class="placeholder" type="text" name="player1" maxlength="10" minlength="1" required>
     </label>
     <br>
     <label>
-      Player 2:
-      <input type="text" name="player2" required>
+      Spēlētājs 2:
+      <input class="placeholder" type="text" name="player2" maxlength="10" minlength="1" required>
     </label>
     <br>
     <label>
-      Player 3:
-      <input type="text" name="player3" required>
+      Spēlātājs 3:
+      <input class="placeholder" type="text" name="player3" maxlength="10" minlength="1" required>
     </label>
     <br>
-    <input type="submit" value="Start Game">
+    <input class="start-game" type="submit" value="Sākt Spēli!">
+  </fieldset>
   </form>
+
+  <script src="myscripts.js"></script>
 </body>
 </html>
