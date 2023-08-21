@@ -40,7 +40,7 @@ th {
 }
 
 td {
-    font-size: 24px;
+    font-size: 30px;
     border: 2px black solid;
-    
+    text-align: center;
 }
